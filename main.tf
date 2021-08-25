@@ -5,6 +5,7 @@ provider "azurerm" {
 
 terraform {
   backend "azurerm" {
+    subscription_id      = "c9e520b1-2096-473b-973b-e2d45ac13eae"
     resource_group_name  = "rg-demoazure-tf"
     storage_account_name = "nisargazuretf"
     container_name       = "terraform-state"
