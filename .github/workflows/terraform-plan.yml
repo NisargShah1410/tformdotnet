@@ -23,7 +23,10 @@ jobs:
         uses: hashicorp/setup-terraform@v1
       
       - name: Terraform login
-        run: terraform login
+        run: |
+          terraform login
+          $echo "yes"
+        
       - name: Terraform Init
         run: terraform init
 
