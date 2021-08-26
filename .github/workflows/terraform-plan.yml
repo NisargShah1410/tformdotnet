@@ -22,10 +22,14 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
       
-      - name: Terraform login
-        run: |
-          terraform login
-          $echo "yes"
+      - name: Terraform Format
+        id: fmt
+        run: terraform fmt -check
+      
+      #- name: Terraform login
+       # run: |
+        #  terraform login
+         # $echo "yes"
         
       - name: Terraform Init
         run: terraform init
