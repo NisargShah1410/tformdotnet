@@ -12,7 +12,7 @@ jobs:
 
     env:
       ARM_CLIENT_ID: 3a572a9a-f530-40b3-a85d-fe1074ef8fcd
-      ARM_CLIENT_SECRET: ${{secrets.TF_API_TOKEN}}
+      ARM_CLIENT_SECRET: .V_D32smr.28zVzcx6~93.c3CsXGl5Yn-P
       ARM_SUBSCRIPTION_ID: c9e520b1-2096-473b-973b-e2d45ac13eae
       ARM_TENANT_ID: 3c8ea0e4-127c-4a02-ac65-58830e4ac608
 
